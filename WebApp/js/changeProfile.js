@@ -1,0 +1,1 @@
+function changeProfile() {init();function init(){	$('.image-upload .upload').click(uploadImage);}function uploadImage(){$('input[name=url]').val(document.URL);$('form#image').submit();	}}$(document).ready(changeProfile);

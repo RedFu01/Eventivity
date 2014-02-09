@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>APP</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDjXDd3i3_ZkaJUadMc-pG2xBVssXD1ekM&sensor=true"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/changeProfile.js"></script>
+<script type="text/javascript" src="js/events.js"></script>
+
+</head>
+<body>
+<div class="login">
+Name:<input name="name" type="text"><br/>
+Password:<input name="password" type="password"><br/>
+<a class="submit">LOGIN</a><br/>
+</div>
+<hr/>
+<br/>
+<div class="register">
+Register<br/>
+Name:<input name="name" type="text"><br/>
+Email:<input name="email" type="text"><br/>
+Password:<input name="password" type="password"><br/>
+
+<a class="register">REGISTER</a><br/>
+</div>
+<hr/>
+<br/>
+<div class="image-upload">
+<form id="image" action="http://fu.no-ip.biz/php/imageUpload.php" method="post" enctype="multipart/form-data">
+  <input id="uploadImage" type="file" accept="image/*" name="image" />
+  <input name="id" type="text" value="1">
+  <input name="url" type="hidden">
+</form>
+<a class="upload">UPLOAD</a><br/>
+</div>
+<hr/>
+<div class="events">
+<div id="map_canvas" style="width:60%; height:60%"></div>
+<a class="getEvents">GET EVENTS</a>
+</div>
+<hr/>
+<div class="create-event">
+EventName:<input name="event-name" type="text"><br/>
+EventAddress:<input name="event-address" type="text"><br/>
+EventDescription:<input name="event-description" type="text"><br/>
+EventHashes:<input name="event-hashes" type="text"><br/>
+<a class="save-event">CREATE EVENT</a><br/>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>APP</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+
+</head>
+<body>
+<form id="form" action="http://fu.no-ip.biz/php/imageUpload.php" method="post" enctype="multipart/form-data">
+  <input id="uploadImage" type="file" accept="image/*" name="image" />
+  <input name="id" type="text" value="2">
+  <input name="url" type="hidden">
+  <input id="button" type="submit" value="Upload">
+</form>
+<a>click</a>
+<script type="text/javascript">
+$('a').click(function(){
+$('input[name=url]').val(document.URL);
+$('form').submit();	
+	});
+</script>
+</body>
+</html>
